@@ -27,7 +27,7 @@ public class P035
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
   BigInteger bi1, bi2;
 
   public Test(Scanner scr)

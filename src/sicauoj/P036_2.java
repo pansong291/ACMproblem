@@ -57,7 +57,7 @@ public class P036_2
 
  static class Test
  {
-  boolean debug = false;
+  static boolean debug = false;
   float f[] = new float[8];
   Rect r1, r2;
 

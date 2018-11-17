@@ -142,7 +142,7 @@ public class P036_1
 
  static class Test
  {
-  boolean debug = false;
+  static boolean debug = false;
   Point p[];
   Rect r1, r2;
 

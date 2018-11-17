@@ -31,7 +31,7 @@ public class P034
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
   String line;
   char[] chs;
 

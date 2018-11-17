@@ -23,7 +23,7 @@ public class nyojP2
 {
  static class Test
  {
-  boolean debug = false;
+  static boolean debug = false;
   String line;
   LinkedList<Character> charList = new LinkedList<Character>();
 

@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /*
@@ -16,15 +17,21 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class Example
+public class Example2
 {
 
  static class Test
  {
   static boolean debug = true;
+  static boolean inputEnd = false;
 
   public Test(Scanner scr)
   {
+   if (scr.nextInt() == 0)
+   {
+    inputEnd = true;
+    return;
+   }
   }
 
   public void run()
@@ -38,20 +45,21 @@ public class Example
 
  }
 
- static Test test[];
+ static LinkedList<Test> test;
 
  public static void main(String[] args)
  {
   Scanner scr = new Scanner(System.in);
-  test = new Test[scr.nextInt()];
-  scr.nextLine();
-  for (int i = 0; i < test.length; i++)
+  test = new LinkedList<Test>();
+  while (true)
   {
-   test[i] = new Test(scr);
+   Test t = new Test(scr);
+   if (Test.inputEnd) break;
+   else test.add(t);
   }
-  for (int i = 0; i < test.length; i++)
+  while (!test.isEmpty())
   {
-   test[i].run();
+   test.removeFirst().run();
   }
  }
 

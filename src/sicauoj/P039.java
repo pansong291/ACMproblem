@@ -30,7 +30,7 @@ public class P039
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
   String line;
 
   public Test(Scanner scr)

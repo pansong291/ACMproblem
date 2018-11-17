@@ -29,7 +29,7 @@ public class P041
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
 
   public Test(Scanner scr)
   {

@@ -1,5 +1,6 @@
 package sicauoj;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /*
@@ -47,10 +48,16 @@ public class P042
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
+  static boolean inputEnd = false;
 
   public Test(Scanner scr)
   {
+   if (scr.nextInt() == 0)
+   {
+    inputEnd = true;
+    return;
+   }
   }
 
   public void run()
@@ -64,20 +71,21 @@ public class P042
 
  }
 
- static Test test[];
+ static LinkedList<Test> test;
 
  public static void main(String[] args)
  {
   Scanner scr = new Scanner(System.in);
-  test = new Test[scr.nextInt()];
-  scr.nextLine();
-  for (int i = 0; i < test.length; i++)
+  test = new LinkedList<Test>();
+  while (true)
   {
-   test[i] = new Test(scr);
+   Test t = new Test(scr);
+   if (Test.inputEnd) break;
+   else test.add(t);
   }
-  for (int i = 0; i < test.length; i++)
+  while (!test.isEmpty())
   {
-   test[i].run();
+   test.removeFirst().run();
   }
  }
 

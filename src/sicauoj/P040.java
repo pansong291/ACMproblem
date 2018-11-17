@@ -31,7 +31,7 @@ public class P040
 
  static class Test
  {
-  boolean debug = true;
+  static boolean debug = true;
   LinkedList<Character> charList;
   int count = 0, total = 1;
 

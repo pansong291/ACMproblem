@@ -38,7 +38,7 @@ public class Example2
   {
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

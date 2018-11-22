@@ -26,7 +26,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P040
+public class Main040
 {
 
  static class Test
@@ -97,7 +97,7 @@ public class P040
    return cList.size() == 0;
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

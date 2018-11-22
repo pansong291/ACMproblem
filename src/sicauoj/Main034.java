@@ -26,7 +26,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P034
+public class Main034
 {
 
  static class Test
@@ -63,7 +63,7 @@ public class P034
    System.out.println();
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

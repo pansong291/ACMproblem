@@ -22,7 +22,7 @@ import java.util.Scanner;
  * sl: 转化为线段相交，再利用向量外积判断。
  */
 
-public class P036_1
+public class Main036
 {
  static class Point
  {
@@ -165,7 +165,7 @@ public class P036_1
    else System.out.println("No");
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

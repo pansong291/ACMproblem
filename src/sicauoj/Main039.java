@@ -25,7 +25,7 @@ import java.util.Scanner;
  * sl: 全排列序数法
  */
 
-public class P039
+public class Main039
 {
 
  static class Test
@@ -59,7 +59,7 @@ public class P039
    System.out.println(ordinal);
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

@@ -36,7 +36,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P038
+public class Main038
 {
  static class Node
  {

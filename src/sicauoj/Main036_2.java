@@ -18,7 +18,7 @@ import java.util.Scanner;
  * sl: 判断矩形在坐标轴上的投影是否相交。
  */
 
-public class P036_2
+public class Main036_2
 {
 
  static class Rect
@@ -77,7 +77,7 @@ public class P036_2
    else System.out.println("No");
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

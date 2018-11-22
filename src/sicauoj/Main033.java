@@ -25,7 +25,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P033
+public class Main033
 {
 
  static class Test
@@ -47,7 +47,7 @@ public class P033
    else System.out.println("cake " + i + " does not fit");
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

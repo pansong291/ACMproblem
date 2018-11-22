@@ -43,7 +43,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P042
+public class Main042
 {
 
  static class Test
@@ -64,7 +64,7 @@ public class P042
   {
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

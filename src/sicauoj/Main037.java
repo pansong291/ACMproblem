@@ -35,7 +35,7 @@ import java.util.Scanner;
  * s   如果前面的所有天都有安排，则该份作业必然被扣分
  */
 
-public class P037
+public class Main037
 {
  static class Node
  {

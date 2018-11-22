@@ -22,7 +22,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P035
+public class Main035
 {
 
  static class Test
@@ -41,7 +41,7 @@ public class P035
    System.out.println(bi1.add(bi2));
   }
 
-  void println(Object o)
+  static void println(Object o)
   {
    if (debug) System.out.println(o);
   }

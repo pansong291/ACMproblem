@@ -19,7 +19,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class P001
+public class Main001
 {
 
  static LinkedList<Integer> res;

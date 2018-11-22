@@ -18,7 +18,7 @@ import java.util.Scanner;
  * sl: 
  */
 
-public class nyojP1
+public class Main1
 {
  static class Test
  {

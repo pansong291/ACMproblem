@@ -1,4 +1,4 @@
-package org.poj;
+package poj.org;
 
 import java.awt.Robot;
 import java.awt.event.InputEvent;

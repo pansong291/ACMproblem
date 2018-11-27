@@ -1,121 +1,70 @@
 package sicauoj;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * tm: 
- * 
- * ms: 
- * 
- * sr: 
- * 
- * sc: 
- * 
- * ei: 
- * 
- * eo: 
- * 
- * sl: 
+tm:
+小明小红            --finish
+
+ms:
+小明有 n 个苹果，每个苹果都有一个正整数代表其重量。
+现在小明想把苹果分一些给小红，使得小红和小明各自所有的苹果总重差值最小。
+例如：1 2 3 4 5，将1 2 4分为1组，3 5分为1组，两组和相差1，是所有方案中相差最少的。
+
+sr:
+第1行：一个数N，N为苹果的数量。
+第2至N+1行，N个正整数代表苹果重量。(N≤100, 所有正整数的和 ≤10000)
+
+sc:
+输出这个最小的差值
+
+ei:
+5
+1
+2
+3
+4
+5
+
+eo:
+1
+
+sl:
+倒序贪婪
+先按照从大到小的顺序对苹果排序，然后
+如果要求每个人分配到的苹果数量也很平均，就正序地把第i到i+c-1个苹果分配给c个人，然后将这c个人按照苹果重量从小到大排序，重复下一次分配
+如果不要求分配到的苹果数量平均的话，就直接把第i个苹果分配给苹果重量最小的那个人，重复下一次分配
  */
 
 public class Main007
 {
 
- static class Apples
- {
-  LinkedList<Integer> list = new LinkedList<Integer>();
-  int sum = 0;
+ static int apples[];
 
-  void addApple(int i)
-  {
-   list.add(i);
-   sum += i;
-  }
-
-  int removeLightApple()
-  {
-   int smallIndex = 0;
-   for (int i = 1; i < list.size(); i++)
-   {
-    if (list.get(smallIndex) > list.get(i)) smallIndex = i;
-   }
-   smallIndex = list.remove(smallIndex);
-   sum -= smallIndex;
-   return smallIndex;
-  }
-
-  void print()
-  {
-   System.out.println("sum=" + sum);
-   for (int i : list)
-   {
-    System.out.print(i + " ");
-   }
-   System.out.println();
-  }
-
- }
-
- static void sort(int[] i)
- {
-  int t;
-  for (int j = i.length - 1; j > 0; j--)
-  {
-   for (int k = 0; k < j; k++)
-   {
-    if (i[k] < i[k + 1])
-    {
-     t = i[k];
-     i[k] = i[k + 1];
-     i[k + 1] = t;
-    }
-   }
-  }
- }
-
- /*
- 1 2 3 4 5
- 5 2 1
- 4 3
- 7 3 1
- 6 5
- */
  public static void main(String[] args)
  {
   Scanner scr = new Scanner(System.in);
-  int apple[] = new int[scr.nextInt()];
-  for (int i = 0; i < apple.length; i++)
+  apples = new int[scr.nextInt()];
+  for (int i = 0; i < apples.length; i++)
   {
-   apple[i] = scr.nextInt();
+   apples[i] = scr.nextInt();
   }
   scr.close();
-  sort(apple);
-  Apples ap1 = new Apples(), ap2 = new Apples();
-  for (int i = 0; i < apple.length; i += 2)
+
+  Arrays.sort(apples);
+  int ap1 = 0, ap2 = 0;
+  for (int i = apples.length - 1; i >= 0; i--)
   {
-   if (ap1.sum < ap2.sum)
+   if (ap1 < ap2)
    {
-    ap1.addApple(apple[i]);
-    if (i + 1 < apple.length) ap2.addApple(apple[i + 1]);
+    ap1 += apples[i];
    }else
    {
-    ap2.addApple(apple[i]);
-    if (i + 1 < apple.length) ap1.addApple(apple[i + 1]);
+    ap2 += apples[i];
    }
   }
-  //  ap1.print();
-  //  ap2.print();
-  int diff1 = Math.abs(ap1.sum - ap2.sum), diff2;
 
-  if (ap1.sum > ap2.sum) ap2.addApple(ap1.removeLightApple());
-  else ap1.addApple(ap2.removeLightApple());
-  diff2 = Math.abs(ap1.sum - ap2.sum);
-  //  ap1.print();
-  //  ap2.print();
-
-  //  System.out.println(diff1);
-  //  System.out.println(diff2);
-  System.out.println(Math.min(diff1, diff2));
+  System.out.println(Math.abs(ap1 - ap2));
  }
 }

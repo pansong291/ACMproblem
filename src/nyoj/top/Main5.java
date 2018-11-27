@@ -1,4 +1,4 @@
-package top.nyoj;
+package nyoj.top;
 
 import java.util.Scanner;
 

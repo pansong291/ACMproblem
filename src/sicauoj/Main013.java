@@ -3,20 +3,20 @@ package sicauoj;
 import java.util.Scanner;
 
 /*
-tm:
+title:
 质数检测            --finish
 
-ms:
+description:
 给出N个正整数，检测每个数是否为质数。如果是，输出"Yes"，否则输出"No"。
 
-sr:
+input:
 第1行：一个数N，表示正整数的数量。(1≤N≤1000)
 第2到N+1行：每行1个数 a(2≤a≤10^9)
 
-sc:
+output:
 输出共N行，每行为 Yes 或 No。
 
-ei:
+sample input:
 5
 2
 3
@@ -24,14 +24,14 @@ ei:
 5
 6
 
-eo:
+sample output:
 Yes
 Yes
 No
 Yes
 No
 
-sl:
+hint:
  */
 
 public class Main013

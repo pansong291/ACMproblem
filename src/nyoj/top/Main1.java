@@ -3,19 +3,20 @@ package nyoj.top;
 import java.util.Scanner;
 
 /*
- * tm: A+B Problem      --finish
- * 
- * ms: 
- * 
- * sr: 
- * 
- * sc: 
- * 
- * ei: 
- * 
- * eo: 
- * 
- * sl: 
+title:
+A+B Problem      --finish
+
+description:
+
+input:
+
+output:
+
+sample input:
+
+sample output:
+
+hint:
  */
 
 public class Main1

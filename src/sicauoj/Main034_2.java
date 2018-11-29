@@ -4,19 +4,19 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * tm: 
- * 
- * ms: 
- * 
- * sr: 
- * 
- * sc: 
- * 
- * ei: 
- * 
- * eo: 
- * 
- * sl: 
+title:
+
+description:
+
+input:
+
+output:
+
+sample input:
+
+sample output:
+
+hint:
  */
 
 public class Main034_2

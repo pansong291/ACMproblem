@@ -3,29 +3,29 @@ package sicauoj;
 import java.util.Scanner;
 
 /*
-tm:
+title:
 数字组合            --finish
 
-ms:
+description:
 在N个数中找出其和为M的若干个数。
 先读入正整数N和M，再读入N个正数（可以有相同的数字，每个数字均在1000以内），
 在这N个数中找出若干个数，使它们的和是M，把满足条件的数字组合都找出来以统计组合的个数，
 输出组合的个数（不考虑组合是否相同）。
 
-sr:
+input:
 第一行是两个数字，表示N和M。(0<N<100, 0<M<10000)。第二行起是N个数。
 
-sc:
+output:
 一个数字，表示和为M的组合的个数。
 
-ei:
+sample input:
 4 4
 1 1 2 2
 
-eo:
+sample output:
 3
 
-sl:
+hint:
 对于每一个正数，都有加与不加两种选择，故共有 2^N 种情况，可以遍历二叉树求解。
 N 较小时可以用递归进行深度搜索
  */

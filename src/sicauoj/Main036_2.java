@@ -3,19 +3,21 @@ package sicauoj;
 import java.util.Scanner;
 
 /*
- * tm: 矩形相交     --finish
- * 
- * ms: 
- * 
- * sr: 
- * 
- * sc: 
- * 
- * ei: 
- * 
- * eo: 
- * 
- * sl: 判断矩形在坐标轴上的投影是否相交。
+title:
+矩形相交     --finish
+
+description:
+
+input:
+
+output:
+
+sample input:
+
+sample output:
+
+hint:
+判断矩形在坐标轴上的投影是否相交。
  */
 
 public class Main036_2

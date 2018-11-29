@@ -4,26 +4,32 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * tm: 字母归类     --finish
- * 
- * ms: 将一个只包含大小写字母的字符串进行分类，按照大小写分类，并且分别按ASCII码大小进行升序排序，
- * m   然后依次输出小写字母序列和大写字母序列。
- * 
- * sr: 第一行将输入一个整数N=(0,1000]
- * s   随后将有N行测试用例，每一行都有一个只包含大小写字母的字符串，字符串长度l=(0,200]
- * 
- * sc: 对于每个测试用例，依次输出排序后的小写字母序列和大写字母序列，每两个字符之间有一个空格，每个测试用例占一行。
- * 
- * ei: 3
- *     aBc
- *     ACBacb
- *     asdf
- * 
- * eo: a c B
- *     a b c A B C
- *     a d f s
- * 
- * sl: 
+title:
+字母归类     --finish
+
+description:
+将一个只包含大小写字母的字符串进行分类，按照大小写分类，并且分别按ASCII码大小进行升序排序，
+然后依次输出小写字母序列和大写字母序列。
+
+input:
+第一行将输入一个整数N=(0,1000]
+随后将有N行测试用例，每一行都有一个只包含大小写字母的字符串，字符串长度l=(0,200]
+
+output:
+对于每个测试用例，依次输出排序后的小写字母序列和大写字母序列，每两个字符之间有一个空格，每个测试用例占一行。
+
+sample input:
+3
+aBc
+ACBacb
+asdf
+
+sample output:
+a c B
+a b c A B C
+a d f s
+
+hint:
  */
 
 public class Main034

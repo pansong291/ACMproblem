@@ -3,27 +3,27 @@ package acm.hfut.edu.cn;
 import java.util.Scanner;
 
 /*
-tm:
+title:
 A-斯坦恩布莱德防御战         --finish
 
-ms:
+description:
 豺狼人带着小提米从(0,0)处开始沿着路径y=kx以速度v逃逸，阿尔萨斯的部队位于(a,b)，那么为了使得追击距离最短并且能正好追上豺狼人，阿尔萨斯的部队应该采取怎样的速率呢？
 
-sr:
+input:
 输入包括多行数据，每行数据有四个数k,a,b,v，输入以文件结尾结束。注意，0<k,a,b,v<1000。
 
-sc:
+output:
 每行输出一个数，表示阿尔萨斯的部队的速度。如果不存在这样的速度，输出一行Impossible。输出的数保留三位小数。
 
-ei:
+sample input:
 1 1 1 1
 2 2 2 2
 
-eo:
+sample output:
 0.000
 0.667
 
-sl:
+hint:
  */
 /*
 #include<stdio.h>

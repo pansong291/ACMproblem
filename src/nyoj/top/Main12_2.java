@@ -5,19 +5,20 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /*
- * tm: 喷水装置（二）          --finish
- *
- * ms:
- *
- * sr:
- *
- * sc:
- *
- * ei:
- *
- * eo:
- *
- * sl:
+title:
+喷水装置（二）          --finish
+
+description:
+
+input:
+
+output:
+
+sample input:
+
+sample output:
+
+hint:
  */
 
 public class Main12_2

@@ -1,19 +1,26 @@
 import java.util.Scanner;
 
 /*
-tm:
+title:
 
-ms:
 
-sr:
+description:
 
-sc:
 
-ei:
+input:
 
-eo:
 
-sl:
+output:
+
+
+sample input:
+
+
+sample output:
+
+
+hint:
+
  */
 
 public class Example

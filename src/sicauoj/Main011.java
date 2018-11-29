@@ -3,26 +3,26 @@ package sicauoj;
 import java.util.Scanner;
 
 /*
-tm:
+title:
 水仙花数            --finish
 
-ms:
+description:
 水仙花数是指一个 n 位数 ( n >= 3 )，它的每个位上的数字的 n 次幂之和等于它本身。（例如：1^3 + 5^3 + 3^3 = 153）
 给出一个整数M，求 >= M的最小的水仙花数。
 
-sr:
+input:
 一个整数M（10 <= M <= 1000）
 
-sc:
+output:
 输出>= M的最小的水仙花数
 
-ei:
+sample input:
 100
 
-eo:
+sample output:
 153
 
-sl:
+hint:
  */
 
 public class Main011

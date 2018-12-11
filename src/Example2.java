@@ -26,10 +26,10 @@ hint:
 public class Example2
 {
  static boolean debug = true;
+ static final Scanner scr = new Scanner(System.in);
 
  public static void main(String[] args)
  {
-  Scanner scr = new Scanner(System.in);
   int inputEnd;
 
   while (true)

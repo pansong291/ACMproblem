@@ -41,7 +41,7 @@ public class Main020
   Node next;
  }
 
- static boolean debug = true;
+ static boolean debug = false;
 
  public static void main1(String[] args)
  {
@@ -69,24 +69,19 @@ public class Main020
 
   current.next = first;//构成循环链
 
-  do
+  while (current.next != current)
   {
-   while (true)//报数
+   theLast = current;
+   current = current.next;
+   count++;//报数
+   if (count > 2000) count = 1;
+   if (count % iKey == 0)
    {
-    theLast = current;
-    current = current.next;
-    count++;
-    if (count > 2000) count = 1;
-    if (count % iKey == 0)
-    {
-     break;
-    }
+    logPrintln("out:" + current.num);
+    theLast.next = current.next;
+    current = theLast;
    }
-
-   logPrintln("out:" + current.num);
-   theLast.next = current.next;
-   current = theLast;
-  }while (current.next != current);
+  }
 
   System.out.println(current.num);
 
